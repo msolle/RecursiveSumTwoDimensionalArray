@@ -8,12 +8,18 @@ package RecursiveSumTwoDimensionalArray;
  * @author Matt
  */
 public class RecursiveSum {
-
-    /**
-     * @param args the command line arguments
-     */
+    
+    public static int arraySum(int[] a, int i) {
+        if(i == 1) return a[0];
+        else  {
+        return arraySum(a, i-1) + a[i-1];
+        }
+    }
+    
     public static void main(String[] args) {
-        // TODO code application logic here
+        int[] a = {1, 2, 3};
+        int b = arraySum(a, 3);
+        System.out.println(b);
     }
     
 }
