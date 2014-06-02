@@ -9,6 +9,12 @@ package RecursiveSumTwoDimensionalArray;
  */
 public class RecursiveSum {
     
+    /**
+     * 
+     * @param a array of integers
+     * @param i index starting at length of array
+     * @return sum of elements of the array
+     */
     public static int arraySum(int[] a, int i) {
         if(i == 1) return a[0];
         else  {
